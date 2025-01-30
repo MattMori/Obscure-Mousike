@@ -3,13 +3,14 @@ import {
   Route,
   Routes,
 } from 'react-router-dom'
+import { Home } from '@/pages'
 
 function App() {
-  
+
   return (
     <Router>
       <Routes>
-        <Route path="/"> Home </Route>
+        <Route path="/" element={<Home />} />
       </Routes>
     </Router>
   )
